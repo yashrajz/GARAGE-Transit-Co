@@ -1,0 +1,71 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  darkMode: 'class',
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        base: '#F3EEE3',
+        paper: '#F6F1E5',
+        cream: '#FBF8F0',
+        sand: '#EAE2D0',
+        frame: '#E5A07F',
+        frameDeep: '#D98A63',
+        bus: '#C8501F',
+        busDeep: '#9E3A12',
+        ink: '#171310',
+        espresso: '#241B14',
+        muted: '#7A6F60',
+        line: 'rgba(23,19,16,0.14)',
+        stamp: '#C8501F',
+        olive: '#5B6650',
+        gold: '#C99B3F',
+        indigo: { DEFAULT: '#C8501F', soft: '#E0682F' },
+        cyan: { DEFAULT: '#2A7D7B', soft: '#3AA39F' },
+        violet: { DEFAULT: '#7A5C3E' },
+        success: '#3E7C4F',
+        warning: '#C99B3F',
+        danger: '#B3362B',
+        info: '#2A7D7B',
+        surface: '#FBF8F0',
+        panel: '#FFFFFF',
+      },
+      fontFamily: {
+        sans: ['Archivo', 'Inter', 'ui-sans-serif', 'system-ui'],
+        display: ['Archivo', 'Inter', 'ui-sans-serif', 'system-ui'],
+        serif: ['"Instrument Serif"', 'Georgia', 'serif'],
+        mono: ['"Space Mono"', 'ui-monospace', 'monospace'],
+      },
+      borderRadius: {
+        card: '4px',
+        pill: '999px',
+      },
+      boxShadow: {
+        glow: '0 12px 32px -12px rgba(200,80,31,0.45)',
+        card: '0 1px 0 rgba(255,255,255,0.7) inset, 0 24px 48px -24px rgba(36,27,20,0.28)',
+        pop: '0 30px 70px -20px rgba(36,27,20,0.38)',
+        stamp: '0 10px 28px -10px rgba(200,80,31,0.55)',
+      },
+      backgroundImage: {
+        'accent-gradient': 'linear-gradient(135deg, #E0682F 0%, #C8501F 55%, #9E3A12 100%)',
+        'gold-gradient': 'linear-gradient(135deg, #E9C87E 0%, #C99B3F 55%, #8A6420 100%)',
+        'paper-grain': 'radial-gradient(at 20% 0%, rgba(200,80,31,0.08) 0px, transparent 55%)',
+      },
+      keyframes: {
+        float: { '0%,100%': { transform: 'translateY(0px)' }, '50%': { transform: 'translateY(-8px)' } },
+        drift: { '0%': { transform: 'translate(0,0)' }, '50%': { transform: 'translate(18px,-12px)' }, '100%': { transform: 'translate(0,0)' } },
+        marquee: { '0%': { transform: 'translateX(0)' }, '100%': { transform: 'translateX(-50%)' } },
+        spinSlow: { to: { transform: 'rotate(360deg)' } },
+        pulseDot: { '0%,100%': { opacity: '1', transform: 'scale(1)' }, '50%': { opacity: '0.55', transform: 'scale(0.85)' } },
+      },
+      animation: {
+        float: 'float 7s ease-in-out infinite',
+        drift: 'drift 12s ease-in-out infinite',
+        marquee: 'marquee 26s linear infinite',
+        spinSlow: 'spinSlow 16s linear infinite',
+      },
+    },
+  },
+  plugins: [],
+}
+
