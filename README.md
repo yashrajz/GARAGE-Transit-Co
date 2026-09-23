@@ -1,6 +1,6 @@
 # Shuttle Management System
 
-Smart campus transit booking and operations dashboard for students, staff, and transport administrators. This is a frontend assessment implementation using realistic, date-relative mock data. There is no production backend or authentication service.
+Smart campus transit booking and operations dashboard for students and transport administrators. This is a frontend assessment implementation using realistic, date-relative mock data. There is no production backend or authentication service.
 
 <p align="center">
   <img src="public/hero.png" alt="Garage Transit hero screen" />
@@ -147,7 +147,7 @@ The configured production command currently passes:
 npm run build  # TypeScript compilation + Vite production bundle
 ```
 
-No test or lint command exists in `package.json` yet. See `Audit.md` for the complete requirement matrix and post-implementation status.
+No test or lint command exists in `package.json` yet.
 
 ## Demo Instructions
 
