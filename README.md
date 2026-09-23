@@ -2,6 +2,11 @@
 
 Smart campus transit booking and operations dashboard for students, staff, and transport administrators. This is a frontend assessment implementation using realistic, date-relative mock data. There is no production backend or authentication service.
 
+<p align="center">
+  <img src="public/hero.png" alt="Garage Transit hero screen" />
+</p>
+<p align="center"><em>Garage Transit hero experience</em></p>
+
 ## Features
 
 ### Student workflows
@@ -14,6 +19,11 @@ Smart campus transit booking and operations dashboard for students, staff, and t
 - Student views are scoped to the authenticated demo user. My Bookings contains only that student's active future bookings and offers cancellation only; completed/cancelled records are shown in that student's Trip History.
 - Admin routes and reducer actions remain operationally all-user, while student dispatches are restricted to creating their own bookings and cancelling their own eligible bookings.
 
+<p align="center">
+  <img src="public/user.png" alt="Student workflow screen" />
+</p>
+<p align="center"><em>Student workflow</em></p>
+
 ### Admin workflows
 
 - Search, filter, edit, and status-manage all bookings.
@@ -22,6 +32,26 @@ Smart campus transit booking and operations dashboard for students, staff, and t
 - View and edit driver duty/break schedules on a 24-hour timeline with half-hour drag snapping.
 - Validate duty overlaps, maximum duty length, break duration, break containment, and break overlap.
 - Monitor active bookings, seats booked, peak departures, route demand, and driver utilization.
+
+<p align="center">
+  <img src="public/admin.png" alt="Admin workflow screen" />
+</p>
+<p align="center"><em>Admin workflow</em></p>
+
+<p align="center">
+  <img src="public/bookride.png" alt="Book ride screen" />
+</p>
+<p align="center"><em>Book a ride</em></p>
+
+<p align="center">
+  <img src="public/driver.png" alt="Driver availability screen" />
+</p>
+<p align="center"><em>Driver availability</em></p>
+
+<p align="center">
+  <img src="public/route.png" alt="Route management screen" />
+</p>
+<p align="center"><em>Route management</em></p>
 
 ## Technology Stack
 
